@@ -92,9 +92,10 @@ const SigninInput = (props) => {
           placeholder={props.text1}
           value={email}
           onChange={onChangeEmail}
+          maxLength={20}
         />
         {emailError && <ErrorMessage>올바르지 않은 이메일입니다.</ErrorMessage>}
-        <InforMation placeholder={props.text2} type="password" />
+        <InforMation placeholder={props.text2} type="password" maxLength={30}/>
       </InfoDiv>
       <LoginButton onClick={onClick}>로그인</LoginButton>
     </InputDiv>

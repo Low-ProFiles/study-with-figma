@@ -102,15 +102,17 @@ const SignupInput = (props) => {
           placeholder={props.text1}
           value={name}
           onChange={onChangeName}
+          maxLength={20}
         />
         {nameError && <ErrorMessage>올바르지 않은 이름입니다.</ErrorMessage>}
         <InforMation
           placeholder={props.text2}
           value={email}
           onChange={onChangeEmail}
+          maxLength={100}
         />
         {emailError && <ErrorMessage>올바르지 않은 이메일입니다.</ErrorMessage>}
-        <InforMation placeholder={props.text3} type="password" />
+        <InforMation placeholder={props.text3} type="password" maxLength={30}/>
       </InfoDiv>
       <LoginButton onClick={onClick}>회원가입</LoginButton>
     </InputDiv>
