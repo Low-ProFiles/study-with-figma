@@ -53,7 +53,7 @@ const LoginButton = styled.button`
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
-  &:hover{
+  &:hover {
     background: #a6a6a6;
   }
 `;
@@ -84,7 +84,7 @@ const SignupInput = (props) => {
 
   const onChangeEmail = (e) => {
     const userEmailRegex =
-      /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{,3}$/i;
+      /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
     if (!e.target.value || userEmailRegex.test(e.target.value))
       setEmailError(false);
     else setEmailError(true);
@@ -110,7 +110,7 @@ const SignupInput = (props) => {
           onChange={onChangeEmail}
         />
         {emailError && <ErrorMessage>올바르지 않은 이메일입니다.</ErrorMessage>}
-        <InforMation placeholder={props.text3} type="password"/>
+        <InforMation placeholder={props.text3} type="password" />
       </InfoDiv>
       <LoginButton onClick={onClick}>회원가입</LoginButton>
     </InputDiv>

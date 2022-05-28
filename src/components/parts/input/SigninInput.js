@@ -53,7 +53,7 @@ const LoginButton = styled.button`
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
-  &:hover{
+  &:hover {
     background: #a6a6a6;
   }
 `;
@@ -74,7 +74,7 @@ const SigninInput = (props) => {
 
   const onChangeEmail = (e) => {
     const userEmailRegex =
-      /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{,3}$/i;
+      /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
     if (!e.target.value || userEmailRegex.test(e.target.value))
       setEmailError(false);
     else setEmailError(true);
