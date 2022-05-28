@@ -74,7 +74,7 @@ const SignIn = ({ SigninClose }) => {
       <ModalPosition>
         <ModalBody className="ModalBody">
           <Logo text="로그인" />
-          <SigninInput text1="Email" text2="비밀번호" />
+          <SigninInput text1="이메일" text2="비밀번호" />
           <InfoBody>
             <Info text2="비밀번호를 잊어버리셨나요?" />
             <Info text1="계정이 없으신가요?" text2="회원가입"></Info>
