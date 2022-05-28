@@ -48,7 +48,7 @@ const 모달컴포넌트 = ({modalClose}) => { //App.js에서 modalClose 함수�
 │     ├── parts
 │         ├── input
 │             ├── SigninInput.js # Signin에 들어갈 파일. 이메일, 패스워드, 로그인 버튼을 포함
-|             ├── SigninInput.js # Signup에 들어갈 파일. 이메일, 패스워드, 로그인 버튼을 포함
+|             ├── SignupInput.js # Signup에 들어갈 파일. 이름, 이메일, 패스워드, 로그인 버튼을 포함
 │         ├── Info.js # 로그인 버튼 밑의 안내 메시지를 포함
 │         ├── Logo.js # 상단의 로고와 텍스트를 포함
 |         ├── Row.js # 중단의 세로선을 포함
