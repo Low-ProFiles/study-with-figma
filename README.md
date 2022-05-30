@@ -97,3 +97,8 @@ const 모달컴포넌트 = ({modalClose}) => { //App.js에서 modalClose 함수�
 5. SNS 로고들 호버 시에 투명도 부여 ( 클릭 시 콘솔 로그 달아 둠 )
 
 > 정규식 참고 링크 : https://velog.io/@gym/React-721
+
+## TODO
+- 에러메시지 떴을 때 CSS 적용
+- 다른 모달 띄울 때 기존 모달 삭제하기
+- 왓챠 배경화면 적용
